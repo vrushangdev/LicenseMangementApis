@@ -1,0 +1,1 @@
+web: gunicorn licensemanagement.wsgi --log-file -
