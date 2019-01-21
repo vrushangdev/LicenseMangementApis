@@ -12,12 +12,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav">
-                <li {% if '/'==request.path %} class="nav-item active mr-3" {% else %} class="nav-item  mr-3" {% endif
-                    %}>
+                <li>
                     <a class="nav-link" href="#">Home</a>
                 </li>
-                <li {% if '/about'==request.path %} class="nav-item active mr-3" {% else %} class="nav-item  mr-3" {%
-                    endif %}>
+                <li class="nav-item active mr-3">
                     <a class="nav-link" href="#">About</a>
                 </li>
 
