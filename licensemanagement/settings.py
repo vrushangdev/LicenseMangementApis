@@ -82,8 +82,8 @@ WSGI_APPLICATION = 'licensemanagement.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST':'',
-        'PORT':'',
+        'HOST':'127.0.0.1',
+        'PORT':'3306',
         'USER':'Vrushangnew',
         'PASSWORD':'123456',
         'NAME': 'django_db'
@@ -125,7 +125,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+STATIC_ROOT =os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
+STATICFILES_DIRS =  [
+    os.path.join(BASE_DIR,'static')
+]
+
+#Media Folder Settings
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_URL='/media/'
 
 
 REST_FRAMEWORK = {
